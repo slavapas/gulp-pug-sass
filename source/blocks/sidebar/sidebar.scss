@@ -1,0 +1,12 @@
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+
+    @media (max-width: 800px) {
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+  }

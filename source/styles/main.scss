@@ -1,9 +1,15 @@
+@import "./vendors/normalize";
+
 @import "./helpers/base";
 @import "./helpers/mixins";
 @import "./helpers/variables";
 
-@import "./vendors/normalize";
+@import "./pages/form";
 
-@import "../blocks/header/header";
-@import "../blocks/footer/footer";
+@import "../blocks/nav/nav";
+@import "../blocks/accordeon/accordeon";
+@import "../blocks/input/input";
+@import "../blocks/select/select";
+@import "../blocks/table/table";
+@import "../blocks/sidebar/sidebar";
 
