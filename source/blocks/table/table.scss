@@ -1,0 +1,47 @@
+.table {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__row {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	&__cell {
+		text-align: center;
+	}
+
+	&__cell:hover {
+		background-color: rgba(100, 100, 100, 0.7);
+	}
+}
+
+@media (max-width: 800px) {
+    .table {
+        display: block;
+        height: 400px;
+        overflow-y: scroll;
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__cell {
+            flex-grow: 1;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__cell--active {
+            display: block;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+    }
+}

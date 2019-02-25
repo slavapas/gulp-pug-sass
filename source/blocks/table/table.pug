@@ -1,2 +1,25 @@
-.table
-    h1 table
+mixin row()
+    .table__row
+        .table__cell Колонка 1
+        .table__cell Колонка 2
+        .table__cell Колонка 3
+        .table__cell Колонка 4
+        .table__cell Колонка 5
+        .table__cell Колонка 6
+        .table__cell Колонка 7
+        .table__cell Колонка 8
+        .table__cell Колонка 9
+        .table__cell Колонка 10
+
+section.table
+    +row()
+    +row()
+    +row()
+    +row()
+    +row()
+    +row()
+    +row()
+    +row()
+    +row()
+    +row()
+    
