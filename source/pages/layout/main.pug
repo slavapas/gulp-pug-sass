@@ -9,6 +9,7 @@ html(lang="ru")
     title Задание 2
 
   body
-    include ../../blocks/nav/nav.pug
-    
-    block pagecontent
+    div.wrapper
+      include ../../blocks/sidebar/sidebar.pug
+      div.content
+        block pagecontent

@@ -14,5 +14,19 @@ img {
 }
 
 body {
-    margin: 10px;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        margin-top: 30px;
+    }
 }

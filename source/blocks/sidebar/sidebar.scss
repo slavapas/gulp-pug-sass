@@ -1,0 +1,12 @@
+.sidebar {
+    max-width: 100%;
+    padding: 10px;
+    height: 100vh;
+
+    @media (max-width: 800px) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+  }
