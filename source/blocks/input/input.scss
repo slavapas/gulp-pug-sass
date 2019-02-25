@@ -1,0 +1,29 @@
+.input {
+    width: 100%;
+	padding: 20px;
+	border: 1px solid rgba(100, 100, 100, 0.7);
+    border-radius: 10px;
+    outline: none;
+    
+    &__wrapper {
+        position: relative;
+	    padding-top: 20px;
+	    margin-bottom: 20px;
+    }
+
+    &__label {
+        position: absolute;
+        top: 36px;
+        left: 20px;
+        transition: top 0.1s ease-out;
+        background-color: white;
+        padding: 0 2px;
+    }
+}
+
+.input:focus ~ .input__label,
+.input:valid ~ .input__label {
+	top: 10px;
+	color: gray;
+}
+

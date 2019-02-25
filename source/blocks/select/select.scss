@@ -1,0 +1,50 @@
+$select-width: 100%;
+
+.select {
+	width: $select-width;
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.title {
+	border: 1px groove gray;
+	background: white;
+	width: $select-width;
+	box-sizing: border-box;
+	padding: 20px;
+	line-height: 14px;
+	cursor: pointer;
+	text-align: left;
+}
+
+.select li {
+	padding: 20px;
+	cursor: pointer;
+}
+
+.select li:nth-child(even) {
+	background-color: rgba(75, 33, 255, 1);
+}
+
+.select li:hover {
+	background-color: gray;
+}
+
+.select ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	z-index: 1000;
+	background: white;
+	width: $select-width;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	box-sizing: border-box;
+}
+
+.select.open ul {
+	display: block;
+}
