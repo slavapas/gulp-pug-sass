@@ -1,10 +1,10 @@
 .sidebar {
-    max-width: 100%;
-    padding: 10px;
+    position: fixed;
     height: 100vh;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
 
     @media (max-width: 800px) {
-        position: fixed;
         top: 0;
         width: 100%;
         height: auto;
